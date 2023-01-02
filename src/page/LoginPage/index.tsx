@@ -1,4 +1,4 @@
-import { Box, Button, Stack, TextField, Input } from "@mui/material"
+import { Box, Button, Input, Stack } from "@mui/material"
 import { Link } from "react-router-dom"
 
 export const LoginPage = () => {
@@ -38,26 +38,27 @@ export const LoginPage = () => {
             spacing={2}>
             Seja Bem vindo
             <Stack>
-              <TextField
-                id="standard-basic"
-                label="Email"
-                variant="standard"
+              <Input 
                 sx={{
                   width: 280,
                   marginTop: 8,
                   marginLeft: "auto",
                   marginRight: "auto",
+                  color: "#ffffff",
+                  
                 }}
                 type={'text'}
               />
-
               <Input
+                id="standard-adornment-amount"
+
                 sx={{
                   width: 280,
                   marginTop: 6,
                   marginBottom: 8,
                   marginLeft: "auto",
                   marginRight: "auto",
+                  color: "#fff"
                 }}
                 type={'password'}
               />
@@ -73,7 +74,7 @@ export const LoginPage = () => {
                       boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
                       backdropFilter: "blur(3.5px)",
                       borderRadius: "10px",
-                      border: "1px solid rgba( 255, 255, 255, 0.18 )", 
+                      border: "1px solid rgba( 255, 255, 255, 0.18 )",
                       '&:hover': {
                         backgroundColor: '#2222224c'
                       },
