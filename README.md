@@ -1,6 +1,6 @@
 # 🚧 README em construção 🚧
 
-### 🛑 Resolvi dar uma parada nesso projeto para focar no Back-end
+### 🛑 Resolvi dar uma parada nesse projeto para focar no Back-end
 
 
 ![image](https://user-images.githubusercontent.com/60453269/211313384-918af1ff-e168-4c1a-997d-1d79efc28b13.png)
