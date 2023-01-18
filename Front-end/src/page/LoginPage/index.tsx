@@ -45,13 +45,11 @@ export const LoginPage = () => {
                   marginLeft: "auto",
                   marginRight: "auto",
                   color: "#ffffff",
-                  
                 }}
                 type={'text'}
               />
               <Input
                 id="standard-adornment-amount"
-
                 sx={{
                   width: 280,
                   marginTop: 6,
