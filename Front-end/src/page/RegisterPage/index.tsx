@@ -1,4 +1,4 @@
-import { Button, Box, Stack, Input, TextField } from "@mui/material"
+import { Box, Button, Input, Stack, TextField } from "@mui/material"
 import { Link } from "react-router-dom"
 
 
@@ -54,7 +54,6 @@ export const RegisterPage = () => {
                 }}
                 type={'text'}
               />
-
               <TextField
                 id="standard-basic"
                 label="Email"
@@ -67,9 +66,9 @@ export const RegisterPage = () => {
                 }}
                 type={'text'}
               />
-
               <Input
                 sx={{
+                  color: "#fff",
                   width: 280,
                   marginTop: 6,
                   marginBottom: 8,
