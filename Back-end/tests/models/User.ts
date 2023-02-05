@@ -4,7 +4,7 @@ export interface IUserDB {
   email: string,
   password: string,
   rgb: [],
-  imgPerfil: {} | null,
+  imgPerfil: {} | null
 }
 export class User {
   constructor(
@@ -13,8 +13,7 @@ export class User {
     private email: string,
     private password: string,
     private rgb: [],
-    private imgPerfil: {} | null,
-
+    private imgPerfil: {} | null
   ) { }
   public getId = () => {
     return this.id
