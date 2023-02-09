@@ -65,7 +65,8 @@ Login | Registro | Home | Menu |
   
 ### ```POST``` 
 ```URL
- http://localhost:3003/users/register```
+ http://localhost:3003/users/register
+```
   
 ```JSON
 {
