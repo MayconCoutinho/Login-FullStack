@@ -6,7 +6,7 @@
 <h1 align="center"> Tela de Login  </h1>
 
 <p align="center">
-  <b> Projeto de uma tela de login totalmente em TypeScript </b></br>
+  <b> Projeto de uma tela de login Simples </b></br>
   <sub> O objetivo desse projeto é criar uma tela de login simples, funcional e que funcione em varios projetos 
   <sub>
 </p>
