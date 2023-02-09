@@ -132,6 +132,7 @@ Login | Registro | Home | Menu |
 
 ```
 
+<br /> 
 
 <a id="Ideias"></a>
 ## 💡 Possíveis Melhoras
