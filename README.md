@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60453269/216775084-2086df6a-55a6-41dd-8cd8-6dc254d2cc4b.png" alt="Logo" width="150" height="150" />
+  <img src="https://user-images.githubusercontent.com/60453269/233521163-5b593f5e-4afd-4995-b527-88c01c677d46.png" alt="Logo" width="200" height="200" />
 </p>
 
 
@@ -98,7 +98,21 @@ Login | Registro | Home | Menu |
 <a id="Dependências"></a>
 ## 🧪 Dependências
 > Requisitos para rotar o codigo...
+
+<br/>
+
+## `📖 Instalação` 
   
+  
+ <br /> 
+
+> Caso tenha Git basta da git clone, caso não tenha baixe o projeto completo em dowlon
+
+```BASH
+git clone https://github.com/MayconCoutinho/Login-FullStack
+```
+
+<br />   
 
 ## `📖 Dependencies` 
 
