@@ -1,25 +1,23 @@
-import jwt from 'jsonwebtoken'
+import jwt from "jsonwebtoken"
+import dotenv from "dotenv"
 
-export interface ITokenPayload {
-    id: string,
+dotenv.config()
+
+export interface AuthenticatorData {
+	id: string
 }
+
 export class Authenticator {
-    generateToken = (payload: ITokenPayload): string => {
-        const token = jwt.sign(
-            payload,
-            "o0zane0o" as string
-        )
-        return token
-    }
-    getTokenPayload = (token: string): ITokenPayload | null => {
-        try {
-            const payload = jwt.verify(
-                token,
-               "o0zane0o" as string
-            )
-            return payload as ITokenPayload
-        } catch (error) {
-            return null
-        }
-    }
+	public generateToken = (input: AuthenticatorData): string => {
+		const token = jwt.sign(input, process.env.JWT_KEY as string)
+		return token
+	}
+	public getTokenDecrypt = (token: string): AuthenticatorData | null => {
+		try {
+			const decrypt = jwt.verify(token, process.env.JWT_KEY as string)
+			return decrypt as AuthenticatorData
+		} catch (error) {
+			return null
+		}
+	}
 }
