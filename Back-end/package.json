@@ -1,42 +1,69 @@
 {
-  "name": "api-youtubecine",
+  "name": "rede-social-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node ./build/src/index.js",
+    "migrations": "npx prisma migrate dev",
     "build": "tsc",
-    "dev": "ts-node-dev ./src/index.ts",
-    "migrations": "tsc && node ./build/src/database/migrations/Migrations.js",
-    "test": "jest"
+    "dev": "ts-node-dev ./src/server.ts",
+    "test": "vitest",
+    "commit": "git-cz"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@faker-js/faker": "^7.6.0",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.15",
-    "@types/jest": "^29.2.6",
     "@types/jsonwebtoken": "^9.0.0",
-    "@types/multer": "^1.4.7",
     "@types/node": "^18.11.18",
+    "@types/supertest": "^2.0.12",
     "@types/uuid": "^9.0.0",
-    "jest": "^29.4.0",
-    "ts-jest": "^29.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "prisma": "^4.13.0",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5",
+    "vitest": "^0.31.0"
   },
   "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "@types/multer": "^1.4.7",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "firebase": "^9.15.0",
-    "firebase-admin": "^11.5.0",
+    "firebase": "^9.22.0",
+    "firebase-admin": "^11.8.0",
     "jsonwebtoken": "^9.0.0",
     "multer": "^1.4.5-lts.1",
-    "mysql": "^2.18.1",
+    "supertest": "^6.3.3",
     "uuid": "^9.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
